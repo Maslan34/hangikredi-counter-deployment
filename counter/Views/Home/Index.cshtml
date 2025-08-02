@@ -1,0 +1,43 @@
+﻿@page
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Counter</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        h2 {
+            color: #444;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #counter {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sayaç</h2>
+
+    <div id="counter">0</div>
+    <button onclick="increase()">Artır</button>
+
+    <script>
+        let count = 0;
+
+        function increase() {
+            count++;
+            document.getElementById("counter").innerText = count;
+        }
+    </script>
+
+</body>
+</html>

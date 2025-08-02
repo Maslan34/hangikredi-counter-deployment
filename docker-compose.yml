@@ -1,0 +1,6 @@
+services:
+  counter:
+    image: ${DOCKER_REGISTRY-}counter
+    build:
+      context: .
+      dockerfile: counter/Dockerfile
